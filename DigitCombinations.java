@@ -1,14 +1,8 @@
 import java.util.*;
 class DigitCombinations {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+
+    void combo(int arr[], int combos[]){
         int x=0;
-        int arr[] = new int[3];
-        int combos[] = new int[6];
-        System.out.println("Enter 3 Numbers: ");
-        for(int i=0;i<3;i++){
-            arr[i]=sc.nextInt();
-        }
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
                 for(int k=0;k<3;k++){
@@ -27,11 +21,27 @@ class DigitCombinations {
                 }
             }
         }
+        
         for(int i=0;i<combos.length;i++){
             if(combos[i]==0){
                 break;
             }
             System.out.println(combos[i]);
+
         }
+    }    
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int arr[] = new int[3];
+        int combos[] = new int[6];
+        System.out.println("Enter 3 Numbers: ");
+        for(int i=0;i<3;i++){
+            arr[i]=sc.nextInt();
+        }
+        
+        DigitCombinations d=new DigitCombinations();
+        d.combo(arr,combos);
     }
 }
