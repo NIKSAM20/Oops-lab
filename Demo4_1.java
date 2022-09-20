@@ -1,23 +1,38 @@
-class Number{
-    private int x;
-    float b;
+class Demo1{
+    public int a;
+    private int b;
 
-    private void printInteger(){
-        System.out.println("The integer is "+this.x);
+    public void printA(int a){
+        System.out.println(this.a);
     }
 
-    void printFloat(){
-        System.out.println("The flaot is "+this.y);
+    private void printB(int b){
+        System.out.println(this.b);
     }
 }
 
-public interface Demo4_1 {
-    public static void main(String argd[]){
+class Demo2 extends Demo1{
+    int c;
+    public void printC(int c){
+        System.out.println(this.c);
+    }
+}
+
+class Demo4_1{
+    public static void main(String args[]){
+
+        Demo1 d1=new Demo1();
+        d1.a=10;
+        d1.printA(d1.a);
+
+        Demo2 d2=new Demo2();
+        d2.a=20;
+        d2.printA(d2.a);
+
+        d2.c=30;
+        d2.printC(d2.c);
         
-        Number a=new Number();
-        a.x=10;
-        a.y=5.4;
-        a.printFloat(a.y);
-        a.printTnteger(a.x);
+        d2.b=40;
+        d2.printB(d2.b);
     }
 }
