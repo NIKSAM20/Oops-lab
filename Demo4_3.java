@@ -1,40 +1,48 @@
 class Worker{
     String name;
-    int salRate;
-
-    void ComPay(int hours){
-        int rate=this.salRate;
-        System.out.println((rate*hours));
-    }
+    int rate;
 }
 
 class DailyWorker extends Worker{
-    void ComPay(int hours){
-        System.out.println(this.name);
-        int rate=this.salRate;
-        System.out.println((rate*hours));
+
+    DailyWorker(String n, int r){
+        name=n;
+        rate=r;
+    }
+
+    public void Compay(int days){
+        
+        System.out.println(name);
+        System.out.println(days*rate);
     }
 }
 
-class SalariedWroker extends Worker{
-    void ComPay(){
-        System.out.println(this.name);
-        int rate=this.salRate;
-        System.out.println((rate*40));
+class SalariedWorker extends Worker{
+
+    SalariedWorker(String n, int r){
+        name=n;
+        rate=r;
+    }
+
+    public void Compay(int hours){
+        
+        System.out.println(name);
+        if(hours<=40){
+            System.out.println(hours*rate); 
+        }
+        else{
+            System.out.println(40*rate);
+        }
     }
 }
 
-public class Demo4_3 {
+public class Demo4_3{
     public static void main(String args[]){
 
-        DailyWorker d=new DailyWorker();
-        d.name="Mukesh";
-        d.salRate=500;
-        d.ComPay(40);
+        DailyWorker Shyam= new DailyWorker("Shyam",600);
+        Shyam.Compay(5);
 
-        SalariedWroker s= new SalariedWroker();
-        s.name="Sukesh";
-        s.salRate=700;
-        s.ComPay();
+        SalariedWorker Shivam= new SalariedWorker("Shivam",200);
+        Shivam.Compay(38);
     }
 }
