@@ -13,15 +13,22 @@ class Employee{
        this.salary=salary;
     }
     public void print(){
-        System.out.println(name);
-        System.out.println(empid);
-        System.out.println(salary);
+        System.out.println("Name=        "+name);
+        System.out.println("Employee ID= "+empid);
+        System.out.println("Salary=      "+salary);
         increaseSalary(salary);
     }
 
     public static void increaseSalary(int salary){
         float newsal=(float)((0.1*salary)+salary);
-        System.out.println("Increased salary of employee is "+newsal);
+        System.out.println("Increased salary= "+newsal);
+    }
+}
+
+class Manager extends Employee{
+    String department;
+    public void printDept(){
+        System.out.println("Department= Manager");
     }
 }
 
@@ -30,5 +37,7 @@ public class Demo4_5 {
 
         Employee Nikhil= new Employee("Nikhil",500094582,10000);
         Nikhil.print();
+        Manager m=new Manager();
+        m.printDept();
     }
 }
