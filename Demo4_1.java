@@ -1,4 +1,4 @@
-class Demo1{
+class Check{
     public int a;
     private int b;
 
@@ -11,7 +11,7 @@ class Demo1{
     }
 }
 
-class Demo2 extends Demo1{
+class Demo2 extends Check{
     int c;
     public void printC(int c){
         System.out.println(this.c);
@@ -21,7 +21,7 @@ class Demo2 extends Demo1{
 class Demo4_1{
     public static void main(String args[]){
 
-        Demo1 d1=new Demo1();
+        Check d1=new Check();
         d1.a=10;
         d1.printA(d1.a);
 
