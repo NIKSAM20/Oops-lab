@@ -4,7 +4,8 @@ class Employee{
     int salary;
 
     Employee(){
-        System.out.println("This is an default constructor being called");
+        System.out.println("This is an default constructor being called.");
+        System.out.println();
     }
 
     Employee(String name, int empid, int salary){
@@ -39,5 +40,8 @@ public class Demo4_5 {
         Nikhil.print();
         Manager m=new Manager();
         m.printDept();
+
+        Employee Shivani=new Employee("Shivani",500094506,12000);
+        Shivani.print();
     }
 }
