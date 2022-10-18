@@ -1,7 +1,9 @@
-import java.util.*;
-class Studentmarks{
+//  4)	Write a program to accept 10 student’s marks in an array, arrange it into ascending order, convert into the following grades and print marks and grades in the tabular form. 
 
-    static void sort(int arr[], int n){
+import java.util.*;
+class Demo2_4{
+
+    void sort(int arr[], int n){
         for(int i=0; i<n; i++){
             for(int j=i; j<n; j++){
                 if(arr[i]>arr[j]){
@@ -24,7 +26,6 @@ class Studentmarks{
             }
         }
     }
-
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
 
@@ -36,7 +37,8 @@ class Studentmarks{
         for(int i=0; i<n; i++){
             arr[i]=sc.nextInt();
         }
-
-        sort(arr,n);        
+	  
+        Demo2_4 s1= new Demo2_4();
+        s1.sort(arr,n);        
     }
 }
