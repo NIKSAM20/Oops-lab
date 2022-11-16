@@ -3,7 +3,7 @@
         If an employee age is greater than 50, an age exception must be thrown. 
 	    Or else an object must be created for the entered employee details */	
 
-import java.util.*;
+import java.util.*; 
 
 class Employee{
     String name;
