@@ -3,7 +3,7 @@ class TelephoneExchange
   float duration;
     TelephoneExchange (float duration)
   {
-    this.duration = duration;
+    this.duration = duration; 
   }
 }
 class ordinary extends TelephoneExchange
