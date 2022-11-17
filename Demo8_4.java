@@ -14,7 +14,7 @@ class Demo8_4 {
 
         for(int i=0; i<str.length(); i++){
             
-            char currChar= str.charAt(i);
+            char currChar= str.charAt(i); 
             if( currChar=='a'){
                 System.out.println("'a' found at index"+i);
                 ctr++;
