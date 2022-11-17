@@ -1,19 +1,21 @@
-public class Demo8_3 {
-    public static void main(String args[]){
-    
-        String str[]= args;
-        
-        for(int a = 0; a < str.length; a++)
+class Demo8_3{
+
+   public static void main(String args[])
+   {
+      String str[]=args;
+
+      char[] ch = strInput.toCharArray();
+      for(int a = 0; a < ch.length; a++)
       {
-         if(str[a] >= 'a' && str[a] <= 'z')
+         if(ch[a] >= 'a' && ch[a] <= 'z')
          {
-            str[a] = (char)((int)str[a] - 32);
+            ch[a] = (char)((int)ch[a] - 32);
          }
       }
-      System.out.println("string in luppercase is: ");
-      for(int a = 0; a < str.length; a++)
+      System.out.println("string in Uppercase is: ");
+      for(int a = 0; a < ch.length; a++)
       { 
-         System.out.println(str[a]);
+         System.out.print(ch[a]);
       }
-    }
+   }
 }

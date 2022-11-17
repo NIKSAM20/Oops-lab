@@ -14,7 +14,7 @@ class Demo8_2{
             ch[a] = (char)((int)ch[a] - 32);
          }
       }
-      System.out.println("string in luppercase is: ");
+      System.out.println("string in Uppercase is: ");
       for(int a = 0; a < ch.length; a++)
       { 
          System.out.print(ch[a]);
