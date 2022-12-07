@@ -1,4 +1,4 @@
-import java.util.*; 
+import java.util.*;
 public class Demo8_2 {
    public static void main(String[] args) {
       try (Scanner sc = new Scanner(System.in)) { 
